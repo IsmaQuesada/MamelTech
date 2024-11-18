@@ -1,0 +1,350 @@
+.ver-producto {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    border-style: double;
+    border-color: #f7f7f7;
+    color: #1A1C22;
+    padding: 10% 10%;
+    cursor: pointer;
+    transition: color, 500ms;
+}
+
+.ver-producto:hover {
+    background-color: #580EF6;
+    border-color: #580EF6;
+    color: #f7f7f7;
+    transform: scale(0.95);
+    filter: drop-shadow(-4px 0px 20px #580EF6);
+}
+
+.carousel-transition {
+    transition: transform 2s ease, opacity .5s ease-out;
+}
+
+#searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 20px 0px;
+}
+
+#searchForm button {
+    transition: all 700ms ease;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    background-color: #1A1C22;
+}
+
+#searchForm button:hover {
+    transform: scale(0.95);
+    filter: drop-shadow(-5px 0px 40px #580EF6);
+}
+
+#search {
+    width: 80%;
+    height: 42px;
+    margin-right: 10px;
+    transition: all 700ms ease;
+    border-color: #f7f7f7;
+    background: none;
+    outline: none;
+    border-width: 0 0 .1rem 0;
+    color: #f7f7f7;
+}
+
+#search::placeholder {
+    color: #f7f7f7;
+    font-size: 1rem;
+}
+
+#search:hover {
+    transform: scale(0.95);
+    filter: drop-shadow(-5px 0px 40px black);
+}
+
+.carousel-item img {
+    height: 30vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+    z-index: -1;
+}
+
+#carrusel-productos {
+    background-color: #1A1C22;
+}
+
+.card-body {
+    background: black;
+    color: #f7f7f7;
+    min-height: 20vh;
+}
+
+.item {
+    margin: 10px;
+}
+
+.item img {
+    height: 25vh;
+}
+
+#container-productos {
+    margin: 0 auto;
+}
+
+#encabezadoProductos {
+    color: white;
+    padding: 10px;
+    width: 90%;
+    border: 2px solid #580EF6;
+    margin: 0 auto;
+}
+
+.item {
+    transition: all 700ms ease;
+}
+
+.item:hover {
+    box-shadow: 0 0.2rem 0.8rem #580EF6;
+    transform: scale(1.05);
+    filter: drop-shadow(-20px 0px 20px black);
+}
+
+.proximamente {
+    background-color: #1A1C22;
+    padding-top: 20px;
+    overflow: auto;
+    padding-bottom: 20px;
+}
+
+.proximamente h1 {
+    text-align: center;
+    color: #afafaf;
+}
+
+.proximamente table {
+    border-color: #1A1C22;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    color: white;
+    width: 95%;
+    border-collapse: collapse;
+}
+
+.proximamente td {
+    font-size: medium;
+}
+
+.proximamente tr:nth-child(even) {
+    /* par */
+    background-color: black;
+}
+
+.proximamente tr:nth-child(even):hover {
+    /* par */
+    background-color: rgb(46, 46, 46);
+}
+
+.proximamente tr:nth-child(odd) {
+    /* impar */
+    background-color: #1A1C22;
+}
+
+.proximamente tr:nth-child(odd):hover {
+    /* impar */
+    background-color: #333742;
+}
+
+.proximamente tr:hover {
+    transition: all 700ms ease;
+}
+
+.proximamente tr:hover {
+    transform: scale(1.02);
+}
+
+.proximamente th {
+    font-size: large;
+    padding: 15px;
+    background-color: #580EF6;
+}
+
+.grey {
+    background-color: #000000c7;
+}
+
+#adicionales {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#adicionales h1 {
+    text-align: center;
+}
+
+#mostrar-api,
+#ocultar-api {
+    background-color: #f7f7f7;
+    border-radius: .5rem;
+    border-style: double;
+    border-color: #f7f7f7;
+    color: #1A1C22;
+    padding: 1% 1%;
+    cursor: pointer;
+    transition: color, 700ms;
+    margin: 25px 0 25px 0;
+}
+
+#mostrar-api:hover,
+#ocultar-api:hover {
+    background-color: #580EF6;
+    border-color: #580EF6;
+    color: #f7f7f7;
+    transform: scale(0.95);
+    filter: drop-shadow(-4px 0px 20px #580EF6);
+}
+
+.contenedor-grafica {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#graficas {
+    background-color: #1A1C22;
+}
+
+.img-container img {
+    width: 80vw;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 20px;
+}
+
+.img-container {
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 700ms ease;
+}
+
+.img-container:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(-5px 0px 20px #580EF6);
+}
+
+.info-container {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.info-container p {
+    margin: 5px;
+    padding: 0px;
+}
+
+.info-container h1 {
+    color: white;
+    padding: 10px;
+    width: 90%;
+    border: 2px solid #580EF6;
+    margin: 0 auto;
+}
+
+.grafica {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    transition: all 700ms ease;
+    margin: 10px;
+    border-radius: 0.5rem;
+}
+
+.grafica:hover {
+    filter: drop-shadow(-10px 0px 10px black);
+    background-color: #21242b;
+}
+
+@media only screen and (min-width: 768px) {
+    #carouselExampleAutoplaying {
+        z-index: -1;
+    }
+
+    .carousel-item img {
+        height: 65vh;
+        object-fit: cover;
+    }
+
+    .carousel-inner h2,
+    .carousel-inner p {
+        margin-bottom: 0px;
+    }
+
+    #search {
+        width: 16%;
+        height: 42px;
+    }
+
+    #encabezadoProductos {
+        width: 20%;
+    }
+
+    #container-productos {
+        margin: 0 auto;
+    }
+
+    .card-body {
+        min-height: auto;
+    }
+
+    .item img {
+        height: 30vh;
+        width: auto;
+    }
+
+    .item {
+        margin: 10px;
+    }
+
+    .ver-producto {
+        padding: 10px 40px;
+    }
+
+    .proximamente table {
+        width: 90%;
+    }
+
+    .grafica {
+        width: 35%;
+        padding: 20px 0;
+        margin-bottom: 50px;
+    }
+
+    .img-container img {
+        width: 25vw;
+        height: 35vh;
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .info-container h1 {
+        width: 100%;
+    }
+
+    .contenedor-grafica {
+        flex-direction: unset;
+        flex-wrap: wrap;
+    }
+}

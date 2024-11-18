@@ -1,0 +1,321 @@
+main {
+    background-color: #1A1C22;
+}
+
+.formulario {
+    display: grid;
+    background-color: #1A1C22;
+    place-items: center;
+    padding: 30px;
+    color: #f7f7f7;
+}
+
+.formulario h1,
+#contacto h1 {
+    color: white;
+    padding: 10px;
+    width: 95%;
+    border: 2px solid #580EF6;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#contacto h2 {
+    color: white;
+    padding: 5px;
+    width: 80%;
+    border: 2px solid #580EF6;
+    text-align: center;
+    margin: 20px auto 10px auto;
+}
+
+.formulario button {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 0.2rem 0.8rem black;
+    border-radius: .5rem;
+    padding: 20px;
+    margin-top: 20px
+}
+
+form fieldset {
+    width: 95%;
+}
+
+fieldset input[type="text"],
+fieldset input[type="email"],
+fieldset input[type="number"] {
+    width: 100%;
+    outline: none;
+    background: transparent;
+    border-width: 0 0 1px 0;
+    border-color: #f7f7f741;
+    color: #f7f7f7;
+    transition: all 700ms ease;
+}
+
+
+fieldset input[type="date"] {
+    width: 100%;
+    outline: none;
+    background: transparent;
+    border-width: 0 0 1px 0;
+    border-color: #f7f7f741;
+    color: #f7f7f7;
+    transition: all 700ms ease;
+}
+
+
+fieldset input::placeholder {
+    text-align: left;
+    padding: 5px;
+    color: #f7f7f7;
+}
+
+fieldset input[type="date"] {
+    text-align: left;
+    padding: 5px;
+    color: #f7f7f7;
+}
+
+fieldset input[type="number"] {
+    text-align: left;
+    padding: 5px;
+    transition: all 700ms ease;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    filter: invert(1);
+}
+
+fieldset input:hover {
+    transform: scale(0.95);
+    filter: drop-shadow(-5px 0px 40px black);
+}
+
+.seleccion ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    border: 0;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+
+#opciones-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+fieldset {
+    text-align: center;
+}
+
+button {
+    background-color: #f7f7f7;
+    border-radius: .5rem;
+    border-style: none;
+    color: #1A1C22;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: ease 700ms;
+}
+
+button:hover {
+    transform: scale(0.95);
+    color: #f7f7f7;
+    background-color: #580EF6;
+    filter: drop-shadow(0px 0px 20px black);
+}
+
+#contacto {
+    display: flex;
+    background-color: #1A1C22;
+    color: #f7f7f7;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 20px;
+    flex-direction: column;
+    width: 80%;
+    transition: all 700ms ease;
+    margin: 0 auto;
+    box-shadow: 0 0.2rem 0.8rem black;
+      border-radius: .5rem;
+}
+
+h3 {
+    padding-top: 10px;
+}
+
+#contacto ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#contacto #img-contacto {
+  margin: 0px auto 20px auto;
+}
+
+#img-formulario {
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease 700ms;
+    margin-bottom: 10px;
+}
+
+#img-formulario img {
+    width: 80px;
+    height: auto;
+}
+
+#img-contacto {
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease 700ms;
+}
+
+#img-contacto img {
+    width: 100px;
+    height: auto;
+}
+
+#img-formulario:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(-5px 0px 40px black);
+}
+
+#img-contacto:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(-5px 0px 40px black);
+}
+
+@media only screen and (min-width: 768px) {
+
+    form {
+        width: 60%;
+        box-shadow: none;
+        transition: ease 700ms;
+    }
+
+    form:hover {
+        filter: drop-shadow(-10px 0px 10px black);
+        background-color: #21242b;
+    }
+
+    form fieldset {
+        width: 60%;
+    }
+
+    fieldset input,
+    label {
+        font-size: larger;
+    }
+
+    fieldset input[type="text"],
+    fieldset input[type="email"],
+    fieldset input[type="number"] {
+        width: 100%;
+    }
+
+    fieldset input[type="date"] {
+        width: 100%;
+    }
+
+
+    fieldset input::placeholder {
+        text-align: left;
+        padding: 5px;
+        color: #f7f7f7;
+    }
+
+    fieldset input[type="date"] {
+        text-align: left;
+        padding: 5px;
+        color: #f7f7f7;
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+    }
+
+    input[type="number"]::-webkit-inner-spin-button {
+        filter: invert(1);
+    }
+
+    .seleccion ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #opciones-formulario {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+
+    .seleccion ul {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .seleccion ul li {
+        margin-top: 20px;
+    }
+
+    .formulario h1 {
+        width: 20%;
+    }
+
+    #contacto {
+        width: 50%;
+        box-shadow: none;
+    }
+
+    #contacto h1 {
+        width: 40%;
+    }
+
+    #contacto h2 {
+        width: 30%;
+    }
+
+    #contacto:hover {
+        filter: drop-shadow(-10px 0px 10px black);
+        background-color: #21242b;
+    }
+
+}

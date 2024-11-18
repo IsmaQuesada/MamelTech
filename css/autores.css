@@ -1,0 +1,166 @@
+.info-general {
+    margin: 0 1rem;
+    text-align: center;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-adicional {
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-adicional p {
+    margin-top: 20px;
+}
+
+.info-general:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(-40px 0px 50px black);
+}
+
+.info-adicional:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(-40px 0px 50px black);
+}
+
+main {
+    padding-top: 35px;
+}
+
+main h1,
+h2 {
+    color: white;
+    padding: 10px;
+    border: 2px solid #580EF6;
+    margin: 0 auto;
+}
+
+main h1 {
+    width: 70%;
+    text-align: center;
+}
+
+.info-general h2 {
+    width: 90%;
+}
+
+.info-adicional h2 {
+    width: 60%;
+}
+
+ol {
+    list-style: none;
+    text-align: center;
+}
+
+#img-autores {
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease 700ms;
+    margin-bottom: 20px;
+}
+
+#img-autores img {
+    width: 90px;
+    height: auto;
+}
+
+#img-autores:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(-5px 0px 40px black);
+}
+
+.foto_personal {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-color: #580EF6;
+    border-style: dotted;
+    border-width: 1%;
+    margin-bottom: 20px;
+    filter: drop-shadow(-15px 0px 15px black);
+}
+
+main {
+    background-color: #1A1C22;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#autor1,
+#autor2 {
+    background-color: #1A1C22;
+    color: #f7f7f7;
+    border-radius: 0.5rem;
+    width: 90%;
+    margin: 20px;
+    transition: all 1s ease;
+    padding: 20px;
+}
+
+#autor1:hover,
+#autor2:hover {
+    filter: drop-shadow(-10px 0px 10px black);
+    background-color: #21242b;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        padding: 50px;
+        flex-wrap: wrap;
+    }
+
+    main h1 {
+        width: 20%;
+    }
+
+    .info-general h2 {
+        width: 70%;
+    }
+
+    .info-adicional h2 {
+        width: 50%;
+    }
+
+    #autor1,
+    #autor2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    #autor1:hover,
+    #autor2:hover {
+        filter: drop-shadow(-40px 0px 30px black);
+    }
+
+    .info-general {
+        width: 50%;
+    }
+
+    .info-adicional {
+        width: 70%;
+    }
+}
